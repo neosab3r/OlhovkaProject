@@ -29,27 +29,32 @@
     display: flex;
     height: 100%;
     width: 100%;
-    align-items: center; /* Логотип и текст выровнены по центру по вертикали */
+    align-items: center;
     justify-content: center;
     gap: 15px; /* Расстояние между логотипом и текстом */
 }
 
 .logoContainer img {
     height: 100%;
-    border-radius: 50%; /* Сделать логотип кругом */
+    border-radius: 50%;
     object-fit: contain; /* Убедиться, что логотип не растягивается */
 }
 
 .logoContainer h1 {
-    font-size: 1.5rem; /* Размер шрифта заголовка */
+    font-size: 1.5rem;
     margin: 0; /* Убираем лишние отступы */
     line-height: 1; /* Высота строки совпадает с размером шрифта */
+}
+
+.logoContainer h1:hover,
+               h1:active {
+    text-decoration: underline;
 }
 
 .navigation a {
     margin: 0 10px;
     padding: 10px 12px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: white;
     text-decoration: none;
 }

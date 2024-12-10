@@ -1,7 +1,6 @@
 ﻿import React from "react";
-import "../Styles/Header.css"
-import {Link} from "react-router-dom";
-
+import "../Styles/Header.css";
+import { Link } from "react-router-dom";
 import LogoImg from "../Images/LogoOlhovka.png";
 
 const Header: React.FC = () => {
@@ -10,15 +9,18 @@ const Header: React.FC = () => {
             <div className="headerTop">
                 <div className="logoContainer">
                     <img src={LogoImg} alt="Logo"/>
-                    <h1>Санаторий-профилакторий "Ольховка"</h1>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <h1>Санаторий-профилакторий "Ольховка"</h1>
+                    </Link>
                 </div>
+
             </div>
             <div className="headerBottom">
                 <nav className="navigation">
-                    <a href="#tours ">Путевки</a>
-                    <Link to="DayStacionar">Дневной стационар</Link>
-                    <a href="#contacts">Реабилитационный центр</a>
-                    <a href="#contacts">Врачи</a>
+                    <Link to="/tours">Путевки</Link> {/* Используем Link для маршрутизации */}
+                    <Link to="/daystacionar">Дневной стационар</Link> {/* Используем Link для маршрутизации */}
+                    <Link to="/rehabilitation">Реабилитационный центр</Link> {/* Используем Link для маршрутизации */}
+                    <Link to="/doctors">Наши специалисты</Link> {/* Используем Link для маршрутизации */}
                 </nav>
             </div>
         </header>
