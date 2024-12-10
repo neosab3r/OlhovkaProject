@@ -1,14 +1,14 @@
 ﻿import React from "react";
 import "../Styles/Header.css";
+
 import { Link } from "react-router-dom";
-import LogoImg from "../Images/LogoOlhovka.png";
 
 const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="headerTop">
                 <div className="logoContainer">
-                    <img src={LogoImg} alt="Logo"/>
+                    <img src={require("../Images/LogoOlhovka.png")} alt="Logo"/>
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <h1>Санаторий-профилакторий "Ольховка"</h1>
                     </Link>
