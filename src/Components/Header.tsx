@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import "../Styles/Header.css";
+
 import { Link } from "react-router-dom";
-import LogoImg from "../Images/LogoOlhovka.png";
 
 const Header: React.FC = () => {
     return (
@@ -9,8 +9,10 @@ const Header: React.FC = () => {
             <div className="headerTop">
                 <Link to="/" style={{textDecoration: 'none', textDecorationColor: 'none'}}>
                 <div className="logoContainer">
-                    <img src={LogoImg} alt="Logo" width="11%"/>
-                    <h1>Санаторий-профилакторий "Ольховка"</h1>
+                    <img src={require("../Images/LogoOlhovka.png")} alt="Logo"/>
+                    <Link to="/" style={{ textDecoration: 'none' }}>
+                        <h1>Санаторий-профилакторий "Ольховка"</h1>
+                    </Link>
                 </div>
                 </Link>
 

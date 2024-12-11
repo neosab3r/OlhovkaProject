@@ -1,0 +1,14 @@
+﻿.slider-section {
+    margin: auto;
+    display: grid; /*выравниванием слайдер изображений по центу*/
+    height: 600px;
+    width: 100%;
+}
+
+.slider-section-swiper{
+    width: 100%;
+}
+
+.slider-section .swiper-slide-content img{
+    object-fit: contain;
+}
