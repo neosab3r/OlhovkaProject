@@ -24,24 +24,28 @@
     text-align: left;
 }
 
-.map-widget {
-    grid-column: 1;
-    grid-row: 1; /* First row */
-    padding-left: 10%;
-}
-
-.map-reviews-widget {
-    transform: scale(0.9);
-    margin-left: -30px;
-
-    grid-column: 1; /* Span both columns */
-
-    grid-row: 2; /* Second row */
-    margin-top: -30px; /* Adjust margin to move it upwards */
-}
-
 .VkLink {
+    align-content: start;
+    width: 30%;
     padding-top: 2%;
-    transform: scale(0.7);
-    margin-left: -55px; /* Adjust the margin to align with the left edge of Reception */
 }
+
+.CompanyName {
+    font-size: 1rem;
+    grid-column: 1;
+    grid-row: 2;
+    padding-right: 24%;
+    margin-bottom: 1%;
+    margin-top: -10%;
+}
+
+.right-column .DeveloperName {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.DeveloperLink {
+    text-decoration: none;
+    color: #ffffff;
+}
+

@@ -6,7 +6,7 @@
     height: 150px;
 }
 
-.headerTop {
+.header-top {
     color: black;
     background-color: white;
     width: 100%;
@@ -16,7 +16,13 @@
     align-items: center;
 }
 
-.headerBottom {
+.header-top-home-link {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.header-bottom {
     background-color: #003366;
     width: 100%;
     height: 100%;
@@ -32,13 +38,13 @@
     align-items: center;
     justify-content: center;
     gap: 15px; /* Расстояние между логотипом и текстом */
+    overflow: hidden;
 }
 
 .logoContainer img {
     height: 100%;
-    border-radius: 50%;
-    padding-top: 1%;
-    object-fit: cover; /* Убедиться, что логотип не растягивается */
+    object-fit: contain; /* Убедиться, что логотип не растягивается */
+    transform: scale(1.2);
 }
 
 .logoContainer h1 {
@@ -47,11 +53,6 @@
     line-height: 1; /* Высота строки совпадает с размером шрифта */
     color: #003366;
 }
-
-/*.logoContainer h1:hover,*/
-/*               h1:active {*/
-/*    text-decoration: underline;*/
-/*}*/
 
 .navigation a {
     margin: 0 10px;

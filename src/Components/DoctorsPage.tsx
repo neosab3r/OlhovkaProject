@@ -2,9 +2,14 @@ import React from "react";
 import "../Styles/DoctorsPage.css";
 
 const doctorsArray = [
-    { name: 'Имя Фамилия 1', img: "Images/Doctors/Doctor-1.png", specialty: 'Вытяжка позвоночника' },
-    { name: 'Имя Фамилия 2', img: "Images/Doctors/Doctor-2.png", specialty: 'Массаж' },
-    { name: 'Имя Фамилия 3', img: "Images/Doctors/Doctor-3.png", specialty: 'Процедурный кабинет' },
+    { name: 'Имя Фамилия 1', img: require("../Images/Doctors/Doctor-1.png"), specialty: 'Вытяжка позвоночника' },
+    { name: 'Имя Фамилия 2', img: require("../Images/Doctors/Doctor-2.png"), specialty: 'Массаж' },
+    { name: 'Имя Фамилия 3', img: require("../Images/Doctors/Doctor-3.png"), specialty: 'Процедурный кабинет' },
+    { name: 'Имя Фамилия 3', img: require("../Images/Doctors/Doctor-3.png"), specialty: 'Процедурный кабинет' },
+    { name: 'Имя Фамилия 3', img: require("../Images/Doctors/Doctor-3.png"), specialty: 'Процедурный кабинет' },
+    { name: 'Имя Фамилия 3', img: require("../Images/Doctors/Doctor-3.png"), specialty: 'Процедурный кабинет' },
+    { name: 'Имя Фамилия 3', img: require("../Images/Doctors/Doctor-3.png"), specialty: 'Процедурный кабинет' },
+    { name: 'Имя Фамилия 3', img: require("../Images/Doctors/Doctor-3.png"), specialty: 'Процедурный кабинет' },
 ];
 
 
