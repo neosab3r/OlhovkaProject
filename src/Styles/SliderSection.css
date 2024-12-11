@@ -1,14 +1,26 @@
 ﻿.slider-section {
-    margin: auto;
+    padding-top: 1%;
     display: grid; /*выравниванием слайдер изображений по центу*/
-    height: 600px;
+    height: 300px;
     width: 100%;
+    color: #003366;
 }
 
 .slider-section-swiper{
     width: 100%;
 }
 
-.slider-section .swiper-slide-content img{
-    object-fit: contain;
+.slider-slide-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slider-slide-content img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }

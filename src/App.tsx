@@ -13,7 +13,6 @@ function App() {
     return (
         <div className="App">
             <Header /> {/* Хедер всегда отображается */}
-
             <div className="content">
                 <Routes>
                     {/* Маршруты для всех страниц */}

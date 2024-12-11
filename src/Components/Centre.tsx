@@ -3,12 +3,11 @@
 import React from "react";
 import {SliderSection} from "./SliderSection";
 
-const images = [
-    { image: require('../Images/OlhovkaCollage.png') },
-    { image: require('../Images/LogoOlhovka.png') },
-];
 
 const Centre: React.FC = () => {
+    const images = require.context('../Images/homeImagesForSlider', true);
+    const imageList = images.keys().map(image => images(image));
+
     return (
         <div className="centre">
             <div className="collage">
@@ -36,7 +35,7 @@ const Centre: React.FC = () => {
                     спектакли.
                 </p>
             </div>
-            <SliderSection images={images}></SliderSection>
+            <SliderSection images={imageList}></SliderSection>
         </div>
     );
 };
