@@ -10,7 +10,7 @@
 .doctors-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивные колонки */
-    gap: 5%; /* Расстояние между карточками врачей */
+    gap: 10%; /* Расстояние между карточками врачей */
     padding: 0 12%;
 }
 
