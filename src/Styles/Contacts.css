@@ -1,0 +1,47 @@
+﻿.Contacts-container {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    grid-template-columns: 2fr 2fr; /* Two columns of equal width */
+    grid-template-rows: auto auto; /* Two rows for the left column */
+    align-items: start;
+    padding-top: 1%;
+    line-height: 15px;
+    background-color: #003366;
+    color: white;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 100%;
+}
+
+.left-column {
+    grid-column: 1;
+    grid-row: 1 / 3; /* Span both rows */
+}
+
+.right-column {
+    grid-column: 2;
+    grid-row: 1; /* First row */
+    text-align: left;
+}
+
+.map-widget {
+    grid-column: 1;
+    grid-row: 1; /* First row */
+    padding-left: 10%;
+}
+
+.map-reviews-widget {
+    transform: scale(0.9);
+    margin-left: -30px;
+
+    grid-column: 1; /* Span both columns */
+
+    grid-row: 2; /* Second row */
+    margin-top: -30px; /* Adjust margin to move it upwards */
+}
+
+.VkLink {
+    padding-top: 2%;
+    transform: scale(0.7);
+    margin-left: -55px; /* Adjust the margin to align with the left edge of Reception */
+}

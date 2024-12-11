@@ -37,19 +37,21 @@
 .logoContainer img {
     height: 100%;
     border-radius: 50%;
-    object-fit: contain; /* Убедиться, что логотип не растягивается */
+    padding-top: 1%;
+    object-fit: cover; /* Убедиться, что логотип не растягивается */
 }
 
 .logoContainer h1 {
     font-size: 1.5rem;
     margin: 0; /* Убираем лишние отступы */
     line-height: 1; /* Высота строки совпадает с размером шрифта */
+    color: #003366;
 }
 
-.logoContainer h1:hover,
-               h1:active {
-    text-decoration: underline;
-}
+/*.logoContainer h1:hover,*/
+/*               h1:active {*/
+/*    text-decoration: underline;*/
+/*}*/
 
 .navigation a {
     margin: 0 10px;
@@ -57,4 +59,11 @@
     font-size: 1.3rem;
     color: white;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон при наведении */
+    color: #f0f0f0; /* Светлый оттенок текста при наведении */
+}
+
