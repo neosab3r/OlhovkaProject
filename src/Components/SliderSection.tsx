@@ -17,9 +17,8 @@ export const SliderSection: React.FC<ImageProps> = ({images}: ImageProps) => {
     return (
         <div className="slider-section">
             <Swiper
-                spaceBetween={30}
                 slidesPerView={3}
-                centeredSlides={true}
+                loop={true}
                 autoplay={{
                     delay: 5000,
                     disableOnInteraction: false,
@@ -27,14 +26,14 @@ export const SliderSection: React.FC<ImageProps> = ({images}: ImageProps) => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Autoplay, Pagination]}
+                modules={[Autoplay]}
                 className="slider-section-swiper"
             >
             {/*передаем путь изображений из массива paths и создаем блоки <SwiperSlide> с блоком <img> внутри*/}
             {images.map((image, index) => (
                 <SwiperSlide key={index}>
-                    <div className="swiper-slide-content">
-                        <img className={`swiper-image${index}`} src={image.image} alt={`Image ${index}`} width="600" height="600"></img>
+                    <div className="slider-slide-content">
+                        <img className={`swiper-image${index}`} src={image} alt={`Image ${index}`}></img>
                     </div>
                 </SwiperSlide>
             ))}
