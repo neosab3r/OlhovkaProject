@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
-import Centre from "./Components/Centre";
+import HomePage from "./Components/Home/HomePage";
 import Contacts from "./Components/Contacts";
 import DoctorsPage from "./Components/DoctorsPage";
 import RehabilitationPage from "./Components/RehabilitationPage";
@@ -16,15 +16,14 @@ function App() {
             <div className="content">
                 <Routes>
                     {/* Маршруты для всех страниц */}
-                    <Route path="/" element={<Centre />} />
-                    <Route path="/centre" element={<Centre />} />
+                    <Route path="/" element={<HomePage />} />
+                    <Route path="/centre" element={<HomePage />} />
                     <Route path="/stacionar" element={<DayHospitalPage />} />
                     <Route path="/doctors" element={<DoctorsPage />} />
                     <Route path="/rehabilitation" element={<RehabilitationPage />} />
                     <Route path="/routes" element={<RoutesPage />} />
                 </Routes>
             </div>
-
             <Contacts /> {/* Контакты всегда отображаются */}
         </div>
     );
