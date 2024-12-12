@@ -4,6 +4,7 @@ import React from "react";
 import {SliderSection} from "../SliderSection";
 import AboutSanatoriumSection from "./AboutSanatoriumSection";
 import PlacementRoomSection from "./PlacementRoomSection";
+import RelaxSection from "./RelaxSection";
 
 
 const HomePage: React.FC = () => {
@@ -15,6 +16,7 @@ const HomePage: React.FC = () => {
             <SliderSection images={imageList}></SliderSection>
             <AboutSanatoriumSection />
             <PlacementRoomSection />
+            <RelaxSection/>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 ﻿import React, {FC} from "react";
 import "../../Styles/Home/PlacementRoomSection.css";
+import {Link} from "react-router-dom";
 
 const PlacementRoomSection: FC = () => {
     return (
@@ -16,6 +17,9 @@ const PlacementRoomSection: FC = () => {
                     </p>
                 </div>
                 <div className="about-placement-right">
+                    <div className="about-placement-link">
+                        <Link className={"about-placement-link-text"} to="/routes">Прейскурант</Link>
+                    </div>
                     <p className="about-placement-default-text">
                         В каждом номере: уютная мебель, спутниковое телевидение, холодильник, ванна/душевая кабина,
                         туалет, полотенца, Wi-fi. Охраняемая территория и автостоянка.

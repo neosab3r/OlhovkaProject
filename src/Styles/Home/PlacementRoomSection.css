@@ -46,7 +46,21 @@
 
 .about-placement-right {
     margin-left: 20px;
-    padding-top: 100px;
+    padding-top: 65px;
+}
+
+.about-placement-link {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+}
+
+.about-placement-link-text {
+    color: #003366;
+    text-align: left;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .about-placement-room-container {
