@@ -1,6 +1,12 @@
 ﻿.home-container {
-    display: grid;
     background-color: white; /* Синий фон */
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 

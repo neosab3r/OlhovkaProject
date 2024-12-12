@@ -1,0 +1,62 @@
+﻿.about-placement-container {
+    font-family: 'Playfair Display', sans-serif;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    flex-direction: column;
+    width: 70%;
+}
+
+.about-placement-grid {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 50% 50%;
+    padding: 2% 2%;
+}
+
+.about-placement-left {
+    margin-right: 20px;
+}
+
+.about-placement {
+    margin-right: 50%;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #003366;
+}
+
+.about-placement-big-text {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about-placement-default-text {
+    color: black;
+    font-weight: normal;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.about-placement-right {
+    margin-left: 20px;
+    padding-top: 100px;
+}
+
+.about-placement-room-container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.about-placement-room-container img {
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+}

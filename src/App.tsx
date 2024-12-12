@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     {/* Маршруты для всех страниц */}
                     <Route path="/" element={<HomePage />} />
-                    <Route path="/centre" element={<HomePage />} />
+                    <Route path="/home" element={<HomePage />} />
                     <Route path="/stacionar" element={<DayHospitalPage />} />
                     <Route path="/doctors" element={<DoctorsPage />} />
                     <Route path="/rehabilitation" element={<RehabilitationPage />} />
