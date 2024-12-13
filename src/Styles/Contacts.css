@@ -4,6 +4,7 @@
     grid-template-columns: 2fr 2fr; /* Two columns of equal width */
     grid-template-rows: auto auto; /* Two rows for the left column */
     align-items: start;
+    margin-top: 2%;
     padding-top: 1%;
     line-height: 15px;
     background-color: #003366;

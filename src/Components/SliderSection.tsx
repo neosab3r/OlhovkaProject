@@ -12,7 +12,7 @@ interface ImageProps {
     images: any[];
 }
 
-/*Слайдер изображений на странице Centre*/
+/*Слайдер изображений на странице HomePage*/
 export const SliderSection: React.FC<ImageProps> = ({images}: ImageProps) => {
     return (
         <div className="slider-section">

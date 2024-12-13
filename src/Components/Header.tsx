@@ -7,7 +7,7 @@ const Header: React.FC = () => {
     return (
         <header className="header">
             <div className="header-top">
-                <Link className="header-top-home-link" to="/">
+                <Link className="header-top-home-link" to="/home">
                     <div className="logoContainer">
                         <img src={require("../Images/LogoOlhovka.png")} alt="Logo"/>
                             <h1>Санаторий-профилакторий "Ольховка"</h1>
