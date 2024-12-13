@@ -10,7 +10,7 @@ const ReviewsWidget:React.FC = () => {
                     width: '53%',
                     height: '60%',
                     border: '0px',
-                    borderRadius: '1.5%',
+                    borderRadius: '2%',
                     boxSizing: 'border-box',
                 }}
                 src="https://yandex.ru/maps-reviews-widget/1645737272?comments"

@@ -55,14 +55,16 @@ const RehabilitationPage: React.FC = () => {
             }}>
                 Реабилитация
             </h2>
-            <div className="rehab-grid">
-                {rehabArray.map((rehab, index) => (
-                    <div className="rehab-card" key={index}>
-                        <img src={rehab.img} className="rehab-image" alt={rehab.name}/>
-                        <h3>{rehab.name}</h3>
-                        <p>{rehab.description}</p>
-                    </div>
-                ))}
+            <div className="rehab-card-padding-container">
+                <div className="rehab-grid">
+                    {rehabArray.map((rehab, index) => (
+                        <div className="rehab-card" key={index}>
+                            <img src={rehab.img} className="rehab-image" alt={rehab.name}/>
+                            <h3>{rehab.name}</h3>
+                            <p>{rehab.description}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
             <h2 style={{fontSize: 23.04}}>Прейскурант на медицинские услуги реабилитационного лечения ООО "СП Ольховка"
                 с 01.08.2024 год.</h2>
@@ -73,7 +75,7 @@ const RehabilitationPage: React.FC = () => {
             }}>
                 <table className="rehab-table">
                     <colgroup>
-                        <col style={{width: '5%'}}/>
+                    <col style={{width: '5%'}}/>
                         <col style={{width: '40%'}}/>
                         <col style={{width: '20%'}}/>
                         <col style={{width: '20%'}}/>
