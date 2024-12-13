@@ -1,6 +1,5 @@
-﻿import React from "react";
+﻿import React, {useLayoutEffect} from "react";
 import "../Styles/Routes.css";
-
 
 // Путевки
 const priceList = [
@@ -72,7 +71,6 @@ const RoutesPage: React.FC = () => {
                     </table>
                 </div>
             ))}
-
             <p className="Table-clarification">
                 * В стоимость услуги входит лечение, проживание и питание.
                 <br/><br/>

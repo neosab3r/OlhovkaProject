@@ -1,15 +1,19 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, {useEffect} from "react";
+import {BrowserRouter, Routes, Route, useLocation} from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
 import HomePage from "./Components/Home/HomePage";
 import Contacts from "./Components/Contacts";
 import DoctorsPage from "./Components/DoctorsPage";
 import RehabilitationPage from "./Components/RehabilitationPage";
-import DayHospitalPage from "./Components/DayHospitalPage";
+import DayHospitalPage from "./Components/DayHospital/DayHospitalPage";
 import RoutesPage from "./Components/RoutesPage";
 
 function App() {
+    const {pathname} = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);    
+    }, [pathname])
     return (
         <div className="App">
             <Header /> {/* Хедер всегда отображается */}

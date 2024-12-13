@@ -1,15 +1,15 @@
 ﻿import React from "react";
 import '../Styles/SliderSection.css'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import {Autoplay} from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 interface ImageProps {
-    images: any[];
+    images: string[];
 }
 
 /*Слайдер изображений на странице HomePage*/
@@ -29,14 +29,14 @@ export const SliderSection: React.FC<ImageProps> = ({images}: ImageProps) => {
                 modules={[Autoplay]}
                 className="slider-section-swiper"
             >
-            {/*передаем путь изображений из массива paths и создаем блоки <SwiperSlide> с блоком <img> внутри*/}
-            {images.map((image, index) => (
-                <SwiperSlide key={index}>
-                    <div className="slider-slide-content">
-                        <img className={`swiper-image${index}`} src={image} alt={`Image ${index}`}></img>
-                    </div>
-                </SwiperSlide>
-            ))}
+                {/*передаем путь изображений из массива paths и создаем блоки <SwiperSlide> с блоком <img> внутри*/}
+                {images.map((image, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="slider-slide-content">
+                            <img className={`swiper-image${index}`} src={image} alt={`Image ${index}`}></img>
+                        </div>
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     )

@@ -1,0 +1,58 @@
+﻿.day-hospital-about-grid {
+    font-family: 'Playfair Display', sans-serif;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 58%;
+    justify-content: center;
+}
+
+.day-hospital-about-grid-section {
+    display: flex;
+}
+
+.about-section-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-description-big-text {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.about-description-title {
+    display: flex;
+    float: left;
+}
+
+.about-description-title img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    padding-right: 20px;
+}
+
+.about-description-default-title-text {
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.about-description-default-header-text
+{
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.about-description-default-text {
+    text-align: left;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.about-description {
+    padding-top: 30px;
+}
+
