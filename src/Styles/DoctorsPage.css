@@ -1,24 +1,32 @@
-﻿.Doctors-container {
-    display: grid;
+﻿.DoctorsPageGeneral {
     font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.DoctorsPageGeneral h1 {
+    font-size: 1.44rem;
+    padding-top: 1%;
+}
+
+.Doctors-container {
+    display: grid;
     text-align: center;
     padding: 20px;
-    background-color: white;
 }
 
 /* Grid-контейнер */
 .doctors-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивные колонки */
-    gap: 10%; /* Расстояние между карточками врачей */
-    padding: 0 12%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивные колонки */
+    gap: 2%; /* Расстояние между карточками врачей */
+    padding: 0 10%;
 }
 
 .doctor-card {
-    background: white;
+    background: #f7f7f7;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -29,10 +37,9 @@
 }
 
 .doctor-image {
-    width: 95%;
+    width: 90%;
     object-fit: contain;
     border-radius: 2%;
-    margin-bottom: 1%;
 }
 
 .doctor-card h3 {
@@ -44,4 +51,5 @@
 .doctor-card p {
     font-size: 1.5rem;
     color: gray;
+    margin: 10px 0 15px;
 }

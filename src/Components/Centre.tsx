@@ -1,8 +1,6 @@
 ﻿import "../Styles/Centre.css";
-
 import React from "react";
-import {SliderSection} from "./SliderSection";
-
+import { SliderSection } from "./SliderSection";
 
 const Centre: React.FC = () => {
     const images = require.context('../Images/homeImagesForSlider', true);
@@ -11,8 +9,9 @@ const Centre: React.FC = () => {
     return (
         <div className="centre">
             <div className="collage">
-                <img src={require('../Images/OlhovkaCollage.png')} alt="OlhovkaCollageAlt"/>
+                <img src={require('../Images/OlhovkaCollage.png')} alt="OlhovkaCollageAlt" />
             </div>
+
             <div className="description">
                 <p>
                     Санаторий-профилакторий «Ольховка» располагается в экологически чистой зоне г. Стерлитамака,
@@ -35,12 +34,9 @@ const Centre: React.FC = () => {
                     спектакли.
                 </p>
             </div>
-            <SliderSection images={imageList}></SliderSection>
+            <SliderSection images={imageList} />
         </div>
     );
 };
 
 export default Centre;
-
-
-
