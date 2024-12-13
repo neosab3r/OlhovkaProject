@@ -1,5 +1,5 @@
-﻿import "../../Styles/Widgets/MapWidget.css";
-import React from "react";
+﻿import React from "react";
+import "../../Styles/Widgets/MapWidget.css";
 
 
 const MapWidget:React.FC = () => {
@@ -29,9 +29,12 @@ const MapWidget:React.FC = () => {
                 src="https://yandex.ru/map-widget/v1/org/olkhovka/1645737272/reviews/?ll=55.936180%2C53.579416&page=2&z=17"
                 width="600"
                 height="400"
-                frameBorder="1"
                 allowFullScreen={true}
-                style={{position: 'relative',borderRadius:'2%'}}
+                style={{
+                    position: 'relative',
+                    borderRadius:'1.5%',
+                    border: '0px',
+            }}
             ></iframe>
         </div>
     )
