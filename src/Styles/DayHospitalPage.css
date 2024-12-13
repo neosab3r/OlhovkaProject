@@ -8,6 +8,10 @@
     background-color: white;
 }
 
+.DayHospital-container h2 {
+    font-size: 1.44rem;
+}
+
 .price-table {
     width: 100%;
     max-width: 1200px;
@@ -32,4 +36,12 @@
 
 .price-table tr:hover {
     background-color: #f1f1f1;
+}
+
+.Table-clarification {
+    font-size: 1.05rem;
+    color: gray;
+    text-align: left;
+    width: 100%;
+    max-width: 1200px;
 }

@@ -7,15 +7,16 @@ import ReviewsWidget from "./Widgets/ReviewsWidget";
 const Contacts: React.FC = () => {
     return (
         <div className="Contacts-container">
-            <MapWidget />
-            <p className="CompanyName">
-                ООО "СП "Ольховка" Ⓒ 2020-2024
-            </p>
+            <div className="left-column">
+                <MapWidget />
+                    <p className="CompanyName">
+                        ООО "СП "Ольховка" © 2020-2024
+                    </p>
+            </div>
             <div className="right-column">
                 <p className="PlaceInfo">
                     453115, Республика Башкортостан, г. Стерлитамак, Ольховка
                 </p>
-
                 <p className="Registry">
                     <br />
                     Регистратура
@@ -29,7 +30,7 @@ const Contacts: React.FC = () => {
                     <br /><br />
                     <a
                         className="vkLink"
-                        href="https://vk.com/sanatoryi_olhovka?z=photo-109953255_457241496%2Falbum-109953255_0%2Frev"
+                        href="https://vk.com/sanatoryi_olhovka"
                         target="_blank"
                         rel="noreferrer"
                     >
@@ -37,7 +38,7 @@ const Contacts: React.FC = () => {
                     </a>
                 </p>
                 <ReviewsWidget />
-
+            </div>
                 <p className="DeveloperName">
                     <a
                         href="https://github.com/BeeGood-LTD"
@@ -48,7 +49,7 @@ const Contacts: React.FC = () => {
                         by: BeeGood
                     </a>
                 </p>
-            </div>
+
         </div>
     );
 };

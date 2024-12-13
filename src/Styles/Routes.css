@@ -8,15 +8,19 @@
     background-color: white;
 }
 
+.Routes-container .h3 {
+    color: red;
+}
+
 .price-table {
     width: 100%;
     max-width: 1200px;
-    border-collapse: collapse;
     margin: 20px 0;
+    table-layout: fixed; /* Добавляем это свойство для фиксированной ширины столбцов */
 }
 
 .price-table th, .price-table td {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     padding: 12px;
     text-align: left;
 }
@@ -34,10 +38,21 @@
     background-color: #f1f1f1;
 }
 
-.note {
-    font-size: 0.9rem;
+.price-table th:nth-child(1), .price-table td:nth-child(1) {
+    width: 40%; /* Задаем ширину для первого столбца */
+}
+
+.price-table th:nth-child(2), .price-table td:nth-child(2) {
+    width: 30%; /* Задаем ширину для второго столбца */
+}
+
+.price-table th:nth-child(3), .price-table td:nth-child(3) {
+    width: 30%; /* Задаем ширину для третьего столбца */
+}
+
+.Table-clarification {
+    font-size: 1.05rem;
     color: gray;
-    margin-top: 20px;
     text-align: left;
     width: 100%;
     max-width: 1200px;

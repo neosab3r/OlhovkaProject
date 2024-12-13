@@ -3,14 +3,14 @@ import React from "react";
 
 const ReviewsWidget:React.FC = () => {
     return (
-        <div className="map-reviews-widget"
+        <div className="reviews-widget"
              style={{width: '560px', height: '200px', overflow: 'hidden', position: 'relative'}}>
             <iframe
                 style={{
-                    width: '55%',
+                    width: '53%',
                     height: '60%',
-                    border: '1px solid #e6e6e6',
-                    borderRadius: '8px',
+                    border: '0px',
+                    borderRadius: '1.5%',
                     boxSizing: 'border-box',
                 }}
                 src="https://yandex.ru/maps-reviews-widget/1645737272?comments"
@@ -24,7 +24,6 @@ const ReviewsWidget:React.FC = () => {
                     textDecoration: 'none',
                     color: '#b3b3b3',
                     fontSize: '10px',
-                    fontFamily: 'YS Text, sans-serif',
                     padding: '0 14px',
                     position: 'absolute',
                     width: '100%',

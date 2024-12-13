@@ -22,31 +22,36 @@
 .right-column {
     grid-column: 2;
     grid-row: 1; /* First row */
+    padding-top: 3.5%;
     text-align: left;
+}
+
+.footer-row {
+    display: flex;
+    width: 100%;
+    background-color: #003366;
 }
 
 .VkLink {
     align-content: start;
     width: 30%;
     padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 .CompanyName {
     font-size: 1rem;
-    grid-column: 1;
-    grid-row: 2;
-    padding-right: 24%;
-    margin-bottom: 1%;
-    margin-top: -10%;
+    padding-top: 3%;
+    margin-right: 23.5%;
 }
 
-.right-column .DeveloperName {
+.DeveloperName {
     font-size: 1rem;
-    text-align: center;
+    margin-left: 35%;
+    margin-top: -5.5%;
 }
 
 .DeveloperLink {
     text-decoration: none;
     color: #ffffff;
 }
-
