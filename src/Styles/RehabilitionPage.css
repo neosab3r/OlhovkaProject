@@ -11,35 +11,50 @@
 
 .rehab-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Адаптивные колонки */
-    gap: 2%; /* Расстояние между карточками */
+    grid-template-columns: repeat(auto-fill, minmax(650px, 1fr)); /* Адаптивные колонки */
+    gap: 1.5%; /* Расстояние между карточками */
     width: 100%;
     padding-bottom: 4%;
+}
+
+.rehab-text {
+    width: 90%; /* Ширина текста */
 }
 
 .rehab-card-padding-container {
     /*костыль паддинг*/
     padding-right: 15%;
     padding-left: 15%;
+    padding-bottom: 8%;
+}
+
+.rehab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .rehab-card {
-    background: #f7f7f7;
+    background: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    gap: 1%; /* Расстояние между изображением и текстом */
     transition: box-shadow 0.3s ease;
 }
+
 
 .rehab-card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .rehab-image {
-    width: 100%;
-    object-fit: contain;
-    border-radius: 2%;
+    max-width: 100%; /* Ширина изображения */
+    height: auto;
+    border-radius: 8px;
 }
 
 .rehab-card h3 {
@@ -98,7 +113,7 @@
     text-align: center;
 }
 .note {
-    font-size: 1.44rem;
+    font-size: 1.05rem;
     color: gray;
     margin-top: 20px;
     text-align: left;

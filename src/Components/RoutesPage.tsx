@@ -37,8 +37,7 @@ const RoutesPage: React.FC = () => {
     return (
         <div className="Routes-container">
                 <h3 style={{
-                    fontSize: 23.04,
-                    paddingBottom: 20,
+                    fontSize: "1.44rem",
                     marginLeft: 320,
                     marginRight: 320
                 }}>
@@ -48,7 +47,7 @@ const RoutesPage: React.FC = () => {
             {priceList.map((category, categoryIndex) => (
                 <div key={categoryIndex}>
                     <h3
-                        style={{fontSize: 23.04
+                        style={{fontSize: "1.44rem"
                     }}>
                         {category.category}
                     </h3>
