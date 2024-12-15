@@ -89,6 +89,7 @@ const rehabArray = [
     },
 ];
 
+
 const RehabilitationPage: React.FC = () => {
     const [activeTableId, setActiveTableId] = useState<string | null>(null);
 
@@ -97,11 +98,11 @@ const RehabilitationPage: React.FC = () => {
     const element = document.getElementById(tableId);
     if (element) {
         // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });  // Прокручиваем страницу до элемента
+        element.scrollIntoView({ behavior: 'smooth', block: 'center' });  // Прокручиваем страницу до элемента
         setActiveTableId(tableId); // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
-        setTimeout(() => setActiveTableId(null), 1500); // Через 1.5 секунды снимаем подсветку
+        setTimeout(() => setActiveTableId(null), 3500); // Через 1.5 секунды плавно снимаем подсветку
     }
-};
+    };
 
     return (
         <div className="rehab-container">

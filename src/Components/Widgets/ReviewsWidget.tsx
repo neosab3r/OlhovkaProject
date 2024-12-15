@@ -11,7 +11,7 @@ const ReviewsWidget:React.FC = () => {
                     height: '60%',
                     border: '0px',
                     borderRadius: '2%',
-                    boxSizing: 'border-box',
+                    boxSizing: 'border-box'
                 }}
                 src="https://yandex.ru/maps-reviews-widget/1645737272?comments"
             ></iframe>
@@ -33,7 +33,7 @@ const ReviewsWidget:React.FC = () => {
                     textOverflow: 'ellipsis',
                     display: 'block',
                     maxHeight: '14px',
-                    whiteSpace: 'nowrap',
+                    whiteSpace: 'nowrap'
                 }}
             >
             </a>
