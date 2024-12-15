@@ -1,4 +1,4 @@
-﻿import React from "react";
+﻿import React, {useState} from "react";
 import "../Styles/RehabilitionPage.css";
 
 const ProcedureImages = [
@@ -23,6 +23,7 @@ const rehabArray = [
                 движения плечевого сустава, обеспечивая наилучший результат механотерапии. Применение аппарата показано после операций и травм.
             </>
         ),
+        tableId: 'artromot'
     },
     {
         name: 'Механотерапия на аппарате ARTROMOT® К1',
@@ -35,6 +36,7 @@ const rehabArray = [
                 естественные движения суставов. Аппараты предназначены как для взрослых, так и для детей с шестилетнего возраста.
             </>
         ),
+        tableId: 'artromot'
     },
     {
         name: 'Электро-, магнито-, лазерная и ультразвуковая терапия на аппарате BTL-5000',
@@ -45,6 +47,7 @@ const rehabArray = [
                 боли и восстановление подвижности. Основные области применения: ортопедия, реабилитация и спортивная медицина.
             </>
         ),
+        tableId: 'BTL-5000'
     },
     {
         name: 'Велоэргометрия (ВЭМ) с газоанализатором',
@@ -57,6 +60,7 @@ const rehabArray = [
                 сердечной мышцы, контроль ЭКГ с газоанализатором проводится при физической нагрузке и помогает уточнить причину снижения работоспособности – вследствие нарушений в работе сердца, патологий дыхания или совместного влияния двух перечисленных факторов.
             </>
         ),
+        tableId: 'VEM'
     },
     {
         name: 'Карбокситерапия',
@@ -68,6 +72,7 @@ const rehabArray = [
                 уменьшению выраженности болевого синдрома в области введения.
             </>
         ),
+        tableId: 'Carboxytherapy'
     },
     {
         name: 'УВТ (ударно-волновая терапия)',
@@ -80,10 +85,24 @@ const rehabArray = [
                 Плотные образования, которые встречаются на пути волн (отложения солей, оссификаты, кальцификаты и другие) дробятся на мелкие части и со временем исчезают.
             </>
         ),
+        tableId: 'UVT'
     },
 ];
 
 const RehabilitationPage: React.FC = () => {
+    const [activeTableId, setActiveTableId] = useState<string | null>(null);
+
+    const handleCardClick = (tableId: string) => {
+    // Получаем элемент таблицы по его id
+    const element = document.getElementById(tableId);
+    if (element) {
+        // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });  // Прокручиваем страницу до элемента
+        setActiveTableId(tableId); // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
+        setTimeout(() => setActiveTableId(null), 1500); // Через 1.5 секунды снимаем подсветку
+    }
+};
+
     return (
         <div className="rehab-container">
             <h2 style={{
@@ -95,7 +114,7 @@ const RehabilitationPage: React.FC = () => {
             <div className="rehab-card-padding-container">
                 <div className="rehab-grid">
                     {rehabArray.map((rehab, index) => (
-                        <div className="rehab-card" key={index}>
+                        <div className="rehab-card" key={index} onClick={() => handleCardClick(rehab.tableId)}>
                             <img src={rehab.img} className="rehab-image" alt={rehab.name}/>
                             <div className="rehab-text">
                                 <h3>{rehab.name}</h3>
@@ -115,7 +134,7 @@ const RehabilitationPage: React.FC = () => {
             }}>
                 <table className="rehab-table">
                     <colgroup>
-                        <col style={{width: '5%'}}/>
+                        <col style={{width: '6%'}}/>
                         <col style={{width: '40%'}}/>
                         <col style={{width: '20%'}}/>
                         <col style={{width: '20%'}}/>
@@ -131,7 +150,7 @@ const RehabilitationPage: React.FC = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                    <tr id="Carboxytherapy" className={activeTableId === 'Carboxytherapy' ? 'highlight' : ''}>
                         <td>1.1</td>
                         <td>Карбокситерапия при различных заболеваниях и патологических состояниях</td>
                         <td>1 сеанс</td>
@@ -165,14 +184,14 @@ const RehabilitationPage: React.FC = () => {
                         <td>6000.00</td>
                         <td>нет льготы</td>
                     </tr>
-                    <tr>
+                    <tr id="VEM" className={activeTableId === 'VEM' ? 'highlight' : ''}>
                         <td>3</td>
                         <td>Велоэргометрия (ВЭМ) с газоанализатором</td>
                         <td>1 процедура</td>
                         <td>2000.00</td>
                         <td>1600.00</td>
                     </tr>
-                    <tr>
+                    <tr  id="artromot" className={activeTableId === 'artromot' ? 'highlight' : ''}>
                         <td>4.1</td>
                         <td>Механотерапия на аппарате ARTROMOT (45 мин)</td>
                         <td>1 процедура</td>
@@ -186,7 +205,7 @@ const RehabilitationPage: React.FC = () => {
                         <td>4500.00</td>
                         <td>нет льготы</td>
                     </tr>
-                    <tr>
+                    <tr id="BTL-5000" className={activeTableId === 'BTL-5000' ? 'highlight' : ''}>
                         <td>5.1</td>
                         <td>Электростимуляция на аппарате BTL-5000</td>
                         <td>15 мин</td>

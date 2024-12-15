@@ -8,17 +8,16 @@
     background-color: white;
 }
 
-
 .rehab-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(650px, 1fr)); /* Адаптивные колонки */
-    gap: 1.5%; /* Расстояние между карточками */
+    gap: 1.5%;
     width: 100%;
     padding-bottom: 4%;
 }
 
 .rehab-text {
-    width: 90%; /* Ширина текста */
+    width: 90%;
 }
 
 .rehab-card-padding-container {
@@ -44,15 +43,15 @@
     align-items: flex-start;
     gap: 1%; /* Расстояние между изображением и текстом */
     transition: box-shadow 0.3s ease;
+    cursor: pointer; /* Добавляем курсор при наведении */
 }
-
 
 .rehab-card:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .rehab-image {
-    max-width: 100%; /* Ширина изображения */
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
@@ -110,8 +109,13 @@
 .rehab-table col:nth-child(3),
 .rehab-table col:nth-child(4),
 .rehab-table col:nth-child(5) {
-    text-align: center;
+    text-align: center; /*выбирает определенные столбцы таблицы и центрирует текст в этих столбцах*/
 }
+
+.rehab-table tr.highlight {
+    background-color: #ffe6e6; /* Подсветка активной строки */
+}
+
 .note {
     font-size: 1.05rem;
     color: gray;
