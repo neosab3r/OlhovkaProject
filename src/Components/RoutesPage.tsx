@@ -36,10 +36,11 @@ const priceList = [
 const RoutesPage: React.FC = () => {
     return (
         <div className="Routes-container">
-                <h3 style={{
+                <h3 className="preyskurant"
+                    style={{
                     fontSize: "1.44rem",
-                    marginLeft: 320,
-                    marginRight: 320
+                    marginLeft: 325,
+                    marginRight: 325
                 }}>
                     Прейскурант цен на санаторно-курортное лечение, оформленное бланком путевки
                     и медицинскую реабилитацию в ООО "СП "Ольховка" с 01.11.2024 года.

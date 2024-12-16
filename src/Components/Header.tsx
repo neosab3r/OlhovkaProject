@@ -9,7 +9,7 @@ const Header: React.FC = () => {
             <div className="header-top">
                 <Link className="header-top-home-link" to="/home">
                     <div className="logoContainer">
-                        <img src={require("../Images/LogoOlhovka.png")} alt="Logo"/>
+                        <img src={require("../Images/LogoOlhovka.png")} className="logo-image"/>
                             <h1>Санаторий-профилакторий "Ольховка"</h1>
                     </div>
                 </Link>

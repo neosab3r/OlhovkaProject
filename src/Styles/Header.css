@@ -41,6 +41,9 @@
     overflow: hidden;
 }
 
+.logo-image {
+    padding-top: 0.5%;
+}
 .logoContainer img {
     height: 100%;
     object-fit: contain; /* Убедиться, что логотип не растягивается */
