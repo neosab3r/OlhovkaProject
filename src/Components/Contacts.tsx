@@ -6,7 +6,7 @@ import ReviewsWidget from "./Widgets/ReviewsWidget";
 
 const Contacts: React.FC = () => {
     return (
-        <div className="Contacts-container">
+        <div className="contacts-container">
             <div className="left-column">
                 <MapWidget />
                     <p className="CompanyName">
@@ -14,38 +14,32 @@ const Contacts: React.FC = () => {
                     </p>
             </div>
             <div className="right-column">
-                <p className="PlaceInfo">
+                <p className="place-info">
                     453115, Республика Башкортостан, г. Стерлитамак, Ольховка
                 </p>
-                <p className="Registry">
-                    <br />
-                    Регистратура
-                    <br /><br />
+                <p className="registry-container">
+                    Регистратура<br/><br/>
                     +7 (3473) 29-58-13
                 </p>
-                <p className="Reception">
-                    Ресепшн
-                    <br /><br />
-                    +7 (3473) 29-58-12
-                    <br /><br />
+                <p className="reception-container">
+                    Ресепшн <br/><br/>
+                    +7 (3473) 29-58-12<br/><br />
                     <a
-                        className="vkLink"
+                        className="vk-link"
                         href="https://vk.com/sanatoryi_olhovka"
                         target="_blank"
-                        rel="noreferrer"
-                    >
-                        <img src={vkLogoLink} className="VkLink" alt="VK Link" />
+                        rel="noreferrer">
+                        <img src={vkLogoLink} className="vkLogo-link" alt="VK Link" />
                     </a>
                 </p>
                 <ReviewsWidget />
             </div>
-                <p className="DeveloperName">
+                <p className="developer-name">
                     <a
                         href="https://github.com/BeeGood-LTD"
                         target="_blank"
                         rel="noreferrer"
-                        className="DeveloperLink"
-                    >
+                        className="developer-link">
                         by: BeeGood
                     </a>
                 </p>

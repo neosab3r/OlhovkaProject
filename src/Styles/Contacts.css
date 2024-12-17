@@ -1,4 +1,4 @@
-﻿.Contacts-container {
+﻿.contacts-container {
     display: grid;
     font-family: 'Montserrat', sans-serif;
     grid-template-columns: 2fr 2fr; /* Two columns of equal width */
@@ -32,11 +32,15 @@
     background-color: #003366;
 }
 
-.VkLink {
+.vkLogo-link {
     align-content: start;
     width: 30%;
     padding-top: 1.5%;
     padding-bottom: 0.5%;
+}
+
+.registry-container {
+    padding-top: 1.5%;
 }
 
 .CompanyName {
@@ -44,13 +48,13 @@
     margin-right: 23.5%;
 }
 
-.DeveloperName {
+.developer-name {
     font-size: 1rem;
     margin-left: 35%;
     margin-top: -6.6%;
 }
 
-.DeveloperLink {
+.developer-link {
     text-decoration: none;
     color: #ffffff;
 }

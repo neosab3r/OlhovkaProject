@@ -1,20 +1,16 @@
-﻿.DoctorsPageGeneral {
+﻿.Doctors-page {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
-}
-
-.DoctorsPageGeneral h1 {
-    font-size: 1.44rem;
-    padding-top: 1%;
-}
-
-.Doctors-container {
     display: grid;
     text-align: center;
     padding: 20px;
     padding-right: 7%;
     padding-left: 7%;
     padding-bottom: 6%;
+}
+
+.Doctors-page h1 {
+    font-size: 1.44rem;
 }
 
 /* Grid-контейнер */
