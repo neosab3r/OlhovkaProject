@@ -5,9 +5,11 @@ import Header from "./Components/Header";
 import HomePage from "./Components/Home/HomePage";
 import Contacts from "./Components/Contacts";
 import DoctorsPage from "./Components/DoctorsPage";
-import RehabilitationPage from "./Components/RehabilitationPage";
+import RehabilitationPage from "./Components/Rehabilitation/RehabilitationPage";
 import DayHospitalPage from "./Components/DayHospital/DayHospitalPage";
 import RoutesPage from "./Components/RoutesPage";
+import ProcedureOne from './Components/Rehabilitation/ProceduresPages/procedureOneExtension';
+
 
 function App() {
     const {pathname} = useLocation();
@@ -26,6 +28,7 @@ function App() {
                     <Route path="/doctors" element={<DoctorsPage />} />
                     <Route path="/rehabilitation" element={<RehabilitationPage />} />
                     <Route path="/routes" element={<RoutesPage />} />
+                    <Route path="/procedureExtension" element={<ProcedureOne />} />
                 </Routes>
             </div>
             <Contacts /> {/* Контакты всегда отображаются */}
