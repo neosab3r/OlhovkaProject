@@ -28,7 +28,7 @@ function App() {
                     <Route path="/doctors" element={<DoctorsPage />} />
                     <Route path="/rehabilitation" element={<RehabilitationPage />} />
                     <Route path="/routes" element={<RoutesPage />} />
-                    <Route path="/procedureExtension" element={<ProcedureOne />} />
+                    <Route path="/procedureExtension" element={<ProcedureOne />} /> {/* открывается при нажатии на процедуру в Реабилитации (RehabilitationPage) */}
                 </Routes>
             </div>
             <Contacts /> {/* Контакты всегда отображаются */}

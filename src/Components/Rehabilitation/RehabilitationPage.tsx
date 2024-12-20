@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "../../Styles/Rehabilitation/RehabilitionPage.css";
 
-const ProcedureImages = [
+const PROCEDURE_IMAGES = [
     require("../../Images/RehabilitationProcedures/procedure(1).png"),
     require("../../Images/RehabilitationProcedures/procedure(2).png"),
     require("../../Images/RehabilitationProcedures/procedure(3).png"),
@@ -14,10 +14,10 @@ const ProcedureImages = [
 
 
 // Реабилитация
-const rehabArray = [
+const REHAB_ARRAY = [
     {
         name: 'Механотерапия на аппарате ARTROMOT® S3',
-        img: ProcedureImages[0],
+        img: PROCEDURE_IMAGES[0],
         description: (
             <>
                 Уникальный тренажер для восстановления объема движений плечевого сустава. Применяется для механотерапии плечевого сустава в реабилитационных
@@ -30,7 +30,7 @@ const rehabArray = [
     },
     {
         name: 'Механотерапия на аппарате ARTROMOT® К1',
-        img: ProcedureImages[1],
+        img: PROCEDURE_IMAGES[1],
         description: (
             <>
                 Тренажер, использующийся для пассивной разработки тазобедренного/коленного сустава, позволяет эффективно устранить последствия длительной контрактуры.
@@ -43,7 +43,7 @@ const rehabArray = [
     },
     {
         name: 'Электро-, магнито-, лазерная и ультразвуковая терапия на аппарате BTL-5000',
-        img: ProcedureImages[2],
+        img: PROCEDURE_IMAGES[2],
         description: (
             <>
                 Это физиотерапевтический аппарат новейшего поколения, обеспечивающий высокоэффективное, неинвазивное лечение скелетно-мышечной системы. Быстрое снижение
@@ -54,7 +54,7 @@ const rehabArray = [
     },
     {
         name: 'Велоэргометрия (ВЭМ) с газоанализатором',
-        img: ProcedureImages[3],
+        img: PROCEDURE_IMAGES[3],
         description: (
             <>
                 Велоэргометрия с газоанализатором – тестирование, проводимое на велотренажере с фиксацией показаний работы сердца и органов дыхания. Анализ выявляет
@@ -67,7 +67,7 @@ const rehabArray = [
     },
     {
         name: 'Карбокситерапия',
-        img: ProcedureImages[4],
+        img: PROCEDURE_IMAGES[4],
         description: (
             <>
                 Это метод лечения спины и суставов, который заключается в осуществлении уколов с углекислым газом в суставы и мышцы. Уже после первого сеанса у пациент улучшается состояние,
@@ -79,7 +79,7 @@ const rehabArray = [
     },
     {
         name: 'УВТ (ударно-волновая терапия)',
-        img: ProcedureImages[5],
+        img: PROCEDURE_IMAGES[5],
         description: (
             <>
                 Это современный и эффективный способ лечения заболеваний опорно-двигательного аппарата. Этот уникальный метод лечения основан на свойствах звука и их использовании в медицинских целях.
@@ -95,20 +95,6 @@ const rehabArray = [
 
 const RehabilitationPage: React.FC = () => {
     const [activeTableId, setActiveTableId] = useState<string | null>(null);
-
-    // const handleCardClick = (tableId: string) => {
-    //     // Получаем элемент таблицы по его id
-    //     const element = document.getElementById(tableId);
-    //     if (element) {
-    //         // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
-    //         element.scrollIntoView({behavior: 'smooth', block: 'center'});  // Прокручиваем страницу до элемента
-    //         setActiveTableId(tableId); // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
-    //         setTimeout(() => setActiveTableId(null), 3500); // Через 1.5 секунды плавно снимаем подсветку
-    //     }
-    // };
-    //
-    // <div className="rehab-card" key={index} onClick={() => handleCardClick(rehab.tableId)}>
-
         return (
         <div className="rehab-container">
             <h2 style={{
@@ -119,7 +105,7 @@ const RehabilitationPage: React.FC = () => {
             </h2>
             <div className="rehab-card-padding-container">
                 <div className="rehab-grid">
-                    {rehabArray.map((rehab, index) => (
+                    {REHAB_ARRAY.map((rehab, index) => (
                         <Link to="/procedureExtension" className="no-underline">
                             <div className="rehab-card" key={index}>
                                 <img src={rehab.img} className="rehab-image" alt={rehab.name}/>
@@ -278,3 +264,24 @@ const RehabilitationPage: React.FC = () => {
         };
 
         export default RehabilitationPage;
+
+
+
+
+
+
+
+
+
+// const handleCardClick = (tableId: string) => {
+//     // Получаем элемент таблицы по его id
+//     const element = document.getElementById(tableId);
+//     if (element) {
+//         // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
+//         element.scrollIntoView({behavior: 'smooth', block: 'center'});  // Прокручиваем страницу до элемента
+//         setActiveTableId(tableId); // Проверяем, существует ли элемент с таким id и прокручиваем до элемента
+//         setTimeout(() => setActiveTableId(null), 3500); // Через 1.5 секунды плавно снимаем подсветку
+//     }
+// };
+//
+// <div className="rehab-card" key={index} onClick={() => handleCardClick(rehab.tableId)}>

@@ -1,4 +1,4 @@
-﻿.procedure-container {
+﻿.ProcedureContainer {
     padding: 20px;
     background-color: #f0f0f0;
     font-family: 'Montserrat', sans-serif;
@@ -58,11 +58,17 @@
 }
 
 .gallery-image {
-    width: 30%;
-    height: auto;
+    height: 500px;
+    width: 495px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 12px;
     transform: scale(0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.gallery-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+

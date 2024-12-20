@@ -3,7 +3,7 @@ import "../Styles/DoctorsPage.css";
 
 //Наши специалисты
 
-const doctorsArray = [
+const DOCTORS_ARRAY = [
     {
         name: 'Имя Фамилия 1',
         img: require("../Images/Doctors/Doctor-1.png"),
@@ -51,10 +51,10 @@ const doctorsArray = [
 
 const DoctorsPage: React.FC = () => {
     return (
-        <div className="Doctors-page">
+        <div className="DoctorsPage">
             <h1>Наши специалисты</h1>
                 <div className="doctors-grid">
-                    {doctorsArray.map((doctor, index) => (
+                    {DOCTORS_ARRAY.map((doctor, index) => (
                         <div className="doctor-card" key={index}>
                             <img src={doctor.img} className="doctor-image"/>
                             <h3>{doctor.name}</h3>

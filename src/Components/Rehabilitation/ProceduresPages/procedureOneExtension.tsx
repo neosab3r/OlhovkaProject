@@ -1,7 +1,9 @@
 ﻿import React from "react";
 import "../../../Styles/Rehabilitation/ProceduresStyles/procedureOneExtension.css";
 
-const galleryImages = [
+
+
+const GALLERY_IMAGES = [
     require("../../../Images/RehabilitationProcedures/Gallery/gallery (1).jpg"),
     require("../../../Images/RehabilitationProcedures/Gallery/gallery (1).jpg"),
     require("../../../Images/RehabilitationProcedures/Gallery/gallery (1).jpg"),
@@ -12,7 +14,7 @@ const galleryImages = [
 
 const CryoTherapyPage = () => {
     return (
-        <div className="procedure-container">
+        <div className="ProcedureContainer">
             <h2 style={{ fontSize: "1.44rem"}}>Artronom S3</h2>
             <div className="procedure-card-padding-container">
                 <div className="procedure-grid">
@@ -31,8 +33,8 @@ const CryoTherapyPage = () => {
             </div>
             <h2 style={{ fontSize: "1.44rem"}}>Галерея</h2>
             <div className="gallery-container">
-                {galleryImages.map((image, index) => (
-                    <img key={index} src={image} alt={`Gallery ${index + 1}`} className="gallery-image" />
+                {GALLERY_IMAGES.map((image, index) => (
+                    <img key={index} src={image} alt={`Gallery ${index}`} className="gallery-image" />
                 ))}
             </div>
         </div>

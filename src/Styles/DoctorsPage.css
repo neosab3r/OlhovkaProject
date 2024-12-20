@@ -1,4 +1,4 @@
-﻿.Doctors-page {
+﻿.DoctorsPage {
     font-family: 'Montserrat', sans-serif;
     background-color: white;
     display: grid;
@@ -9,7 +9,7 @@
     padding-bottom: 6%;
 }
 
-.Doctors-page h1 {
+.DoctorsPage h1 {
     font-size: 1.44rem;
 }
 
